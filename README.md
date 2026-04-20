@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# life, but make it fun ☺
+
+Your daily life dashboard — scientifically unverified, emotionally accurate.
+
+## What it is
+
+A one-session daily check-in app that turns simple mood and energy inputs into a fun, visually rich "life dashboard." Not a health tracker. Not a productivity app. Just a cheerful, illustrated mirror for your day.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) and start your check-in.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | What it does |
+|-------|-------------|
+| `/` | Today's check-in form + generated dashboard |
+| `/history` | Last 7 saved entries |
+| `/insights` | Mood trends + metric averages |
+| `/playground` | Coming-soon feature wishlist |
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **Framer Motion** — card animations, floating effects
+- **localStorage** — all data stays local, no backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Metrics (0–100)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Metric | Formula |
+|--------|---------|
+| Main Character Energy | 0.30×mood + 0.15×sleep + 0.20×dramatic + 0.10×movement + 0.25×social |
+| Avoidance Rate | 0.40×(10−focus) + 0.25×dramatic + 0.20×(10−movement) + 0.15×(10−sleep) |
+| Emotional Bandwidth | 0.35×mood + 0.25×sleep + 0.20×social + 0.20×focus |
+| Delusion-to-Execution Ratio | 0.45×dramatic + 0.30×(10−focus) + 0.25×(10−sleep) |
+| Overthinking Index | 0.35×dramatic + 0.30×(10−sleep) + 0.20×(10−social) + 0.15×(10−mood) |
 
-## Deploy on Vercel
+Sleep is normalized to a 0–10 scale before use.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy to Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+vercel deploy
+```
+
+No environment variables. No database. No auth. Just vibes.
+
+---
+
+*"You are not lazy. You are on standby for your main plot."*
