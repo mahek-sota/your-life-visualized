@@ -96,7 +96,7 @@ export default function MetricCard({ metric, value, index, fullWidth }: MetricCa
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.08 }}
-      className={`rounded-3xl p-5 flex gap-4 items-start relative overflow-hidden card-shadow ${fullWidth ? 'col-span-2' : ''}`}
+      className={`rounded-3xl p-5 flex gap-4 items-start relative overflow-hidden card-shadow ${fullWidth ? 'sm:col-span-2' : ''}`}
       style={{ backgroundColor: cfg.bg }}
     >
       {/* Illustration */}

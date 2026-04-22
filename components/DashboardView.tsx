@@ -56,7 +56,7 @@ export default function DashboardView({ entry }: DashboardViewProps) {
       </div>
 
       {/* Metrics grid */}
-      <div className="grid grid-cols-2 gap-4 mb-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <MetricCard metric="mainCharacterEnergy" value={entry.metrics.mainCharacterEnergy} index={0} />
         <MetricCard metric="avoidanceRate" value={entry.metrics.avoidanceRate} index={1} />
         <MetricCard metric="emotionalBandwidth" value={entry.metrics.emotionalBandwidth} index={2} />
