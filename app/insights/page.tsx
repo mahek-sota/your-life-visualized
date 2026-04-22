@@ -26,8 +26,8 @@ export default function InsightsPage() {
     return (
       <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#FFFBEE' }}>
         <Navbar />
-        <main className="max-w-[900px] mx-auto px-6 py-16 text-center flex-1">
-          <div className="bg-white rounded-3xl p-16 card-shadow">
+        <main className="max-w-[900px] mx-auto px-4 md:px-6 py-8 md:py-16 text-center flex-1">
+          <div className="bg-white rounded-3xl p-8 md:p-16 card-shadow">
             <div className="text-6xl mb-4">🔮</div>
             <h2 className="font-800 text-xl text-gray-800 mb-2" style={{ fontWeight: 800 }}>No insights yet</h2>
             <p className="text-gray-500 text-sm mb-6" style={{ fontWeight: 600 }}>
@@ -64,7 +64,7 @@ export default function InsightsPage() {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#FFFBEE' }}>
       <Navbar />
 
-      <main className="max-w-[900px] mx-auto px-6 py-10 flex-1">
+      <main className="max-w-[900px] mx-auto px-4 md:px-6 py-6 md:py-10 flex-1">
         <div className="mb-8">
           <h1 className="font-900 text-3xl text-gray-900 flex items-center gap-2" style={{ fontWeight: 900 }}>
             Your Insights <span className="text-[#fbbf24]">✦</span>
@@ -135,7 +135,7 @@ export default function InsightsPage() {
         </motion.div>
 
         {/* Best day / rough day */}
-        <div className="grid grid-cols-2 gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           <motion.div
             initial={{ opacity: 0, x: -16 }}
             animate={{ opacity: 1, x: 0 }}

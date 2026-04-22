@@ -28,7 +28,7 @@ export default function HistoryPage() {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#FFFBEE' }}>
       <Navbar />
 
-      <main className="max-w-[900px] mx-auto px-6 py-10 flex-1">
+      <main className="max-w-[900px] mx-auto px-4 md:px-6 py-6 md:py-10 flex-1">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div>
@@ -54,7 +54,7 @@ export default function HistoryPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white rounded-3xl p-16 text-center card-shadow"
+            className="bg-white rounded-3xl p-8 md:p-16 text-center card-shadow"
           >
             <div className="text-6xl mb-4">📭</div>
             <h2 className="font-800 text-xl text-gray-800 mb-2" style={{ fontWeight: 800 }}>No entries yet</h2>
@@ -113,7 +113,8 @@ export default function HistoryPage() {
                   </div>
 
                   {/* Metrics mini row */}
-                  <div className="mt-4 grid grid-cols-5 gap-2">
+                  <div className="mt-4 overflow-x-auto">
+                  <div className="grid grid-cols-5 gap-2 min-w-[260px]">
                     {[
                       { label: 'Main Character', v: e.metrics.mainCharacterEnergy, color: '#fbbf24' },
                       { label: 'Avoidance', v: e.metrics.avoidanceRate, color: '#a78bfa' },
@@ -132,6 +133,7 @@ export default function HistoryPage() {
                         <span className="text-xs font-800" style={{ fontWeight: 800, color: m.color }}>{m.v}</span>
                       </div>
                     ))}
+                  </div>
                   </div>
 
                   {/* Vitals */}

@@ -33,7 +33,7 @@ export default function DashboardView({ entry }: DashboardViewProps) {
         <span className="absolute top-8 left-72 text-[#a78bfa] text-sm sparkle-anim" style={{ animationDelay: '1.2s' }}>✦</span>
 
         <div>
-          <h1 className="font-900 text-3xl text-gray-900 mb-1 flex items-center gap-2" style={{ fontWeight: 900 }}>
+          <h1 className="font-900 text-2xl md:text-3xl text-gray-900 mb-1 flex items-center gap-2" style={{ fontWeight: 900 }}>
             Good job, human! 🌈
           </h1>
           <p className="text-gray-600 text-sm mb-3" style={{ fontWeight: 600 }}>
@@ -44,7 +44,7 @@ export default function DashboardView({ entry }: DashboardViewProps) {
           </div>
         </div>
 
-        <div className="float">
+        <div className="float hidden sm:block">
           <HeroIllustration />
         </div>
       </motion.div>
@@ -65,7 +65,7 @@ export default function DashboardView({ entry }: DashboardViewProps) {
       </div>
 
       {/* Bottom row: sticky note + summary + insight */}
-      <div className="flex gap-4 items-start">
+      <div className="flex flex-col md:flex-row gap-4 items-start">
         <StickyNote />
         <SummaryCard summary={entry.summary} />
         <InsightCard insight={entry.insight} />

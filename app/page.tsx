@@ -62,15 +62,15 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#FFFBEE' }}>
       <Navbar onNewDay={handleNewDay} />
 
-      <main className="max-w-[1200px] mx-auto px-6 py-6 flex-1">
-        <div className="flex gap-6 items-start">
+      <main className="max-w-[1200px] mx-auto px-4 md:px-6 py-4 md:py-6 flex-1">
+        <div className="flex flex-col md:flex-row gap-6 items-start">
           {/* Left: check-in form */}
-          <div className="w-[280px] flex-shrink-0">
+          <div className="w-full md:w-[280px] md:flex-shrink-0">
             <CheckInPanel onSubmit={handleSubmit} loading={loading} />
           </div>
 
           {/* Right: dashboard */}
-          <div className="flex-1 min-w-0" id="dashboard">
+          <div className="flex-1 min-w-0 w-full" id="dashboard">
             {entry ? (
               <DashboardView entry={entry} />
             ) : (

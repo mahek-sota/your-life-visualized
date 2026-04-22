@@ -18,7 +18,7 @@ export default function PlaygroundPage() {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#FFFBEE' }}>
       <Navbar />
 
-      <main className="max-w-[900px] mx-auto px-6 py-10 flex-1">
+      <main className="max-w-[900px] mx-auto px-4 md:px-6 py-6 md:py-10 flex-1">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -16 }}

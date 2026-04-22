@@ -79,7 +79,7 @@ export default function Footer() {
       className="mt-4"
       style={{ backgroundColor: '#E4DAFF' }}
     >
-      <div className="max-w-[1200px] mx-auto px-6 py-8 flex items-center justify-between gap-6">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left: girl + text */}
         <div className="flex items-center gap-4">
           <FooterGirlIllustration />

@@ -20,7 +20,7 @@ export default function StickyNote() {
       initial={{ opacity: 0, rotate: -2, scale: 0.95 }}
       animate={{ opacity: 1, rotate: -1.5, scale: 1 }}
       transition={{ duration: 0.4, delay: 0.4 }}
-      className="relative w-48 flex-shrink-0"
+      className="relative w-full md:w-48 md:flex-shrink-0"
       style={{ transform: 'rotate(-1.5deg)' }}
     >
       {/* Tape strip at top */}

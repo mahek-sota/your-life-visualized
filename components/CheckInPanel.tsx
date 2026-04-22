@@ -37,7 +37,7 @@ export default function CheckInPanel({ onSubmit, loading }: CheckInPanelProps) {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.4 }}
-      className="bg-white rounded-3xl p-6 card-shadow h-fit sticky top-24"
+      className="bg-white rounded-3xl p-6 card-shadow h-fit md:sticky md:top-24"
     >
       {/* Header */}
       <div className="mb-6">
